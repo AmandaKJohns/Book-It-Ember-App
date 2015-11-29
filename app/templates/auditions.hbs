@@ -1,0 +1,15 @@
+<br>
+<br>
+<div class='row'>
+
+  <div class='col-xs-3'>
+    {{#each model as |audition|}}
+      <p>{{link-to audition.title 'auditions.audition' audition}}</p>
+    {{/each}}
+  </div>
+
+  <div class='col-xs-9'>
+    {{outlet}}
+  </div>
+
+</div>
